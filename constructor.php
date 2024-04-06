@@ -7,11 +7,11 @@ class Produk {
             $penerbit = "penerbit",
             $harga =  0;
 
-    public function __construct( $judul, $penulis, $penerbit, $harga) {
+    public function __construct( $judul, $penulis, $penerbit, $harga = 0) {
         $this->judul = $judul;
         $this->penulis = $penulis;
         $this->penerbit = $penerbit;
-        $harga = 0;
+        $this ->harga = $harga;
     }
     
     public function getLabel() {
